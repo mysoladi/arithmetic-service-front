@@ -50,7 +50,7 @@
         <section>
             <h2>Subtraction</h2>
             <input id="input3" />
-            <label>+</label>
+            <label>-</label>
             <input id="input4" />
             <button onclick="arithmeticSubtraction()">=</button>
             <p id="output2"></p>
@@ -127,7 +127,7 @@
             let n = numberToTest.value;
             const response = await fetch("https://ciphers-service-wktz.onrender.com/ciphers/caesar/" + n + "/2");
             const result = await response.json();
-            document.getElementById("cipherCheckResult").innerText = result;
+            document.getElementById("cipherCheckResult").innerText = result.cipher;
         }
 
     </script>
